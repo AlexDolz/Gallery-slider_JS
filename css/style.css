@@ -61,6 +61,7 @@ button:active {
     background-image: none;
     margin: 0;
     height: 100vh;
+    border-radius: 0;
   }
   .container::after {
     content: 'Sorry, the slider runs only on desktop';
@@ -86,6 +87,7 @@ button:active {
     margin: 0;
     height: 100vh;
     padding-top: 100px;
+    border-radius: 0;
   }
   .container::after {
     content: 'Sorry, the slider runs only on desktop';
