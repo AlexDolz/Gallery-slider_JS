@@ -54,3 +54,53 @@ button:active {
 #slider_next {
   margin-left: 10px;
 }
+
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  .container {
+    background-color: black;
+    background-image: none;
+    margin: 0;
+    height: 100vh;
+  }
+  .container::after {
+    content: 'Sorry, the slider runs only on desktop';
+    text-align: center;
+    font-size: 72px;
+    color: yellow;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #slider_line {
+    display: none;
+  }
+  #slider {
+    display: none;
+  }
+}
+@media (orientation: portrait) and (hover: none) and (pointer: coarse) {
+  .container {
+    background-color: black;
+    background-image: none;
+    margin: 0;
+    height: 100vh;
+    padding-top: 100px;
+  }
+  .container::after {
+    content: 'Sorry, the slider runs only on desktop';
+    text-align: center;
+    font-size: 72px;
+    color: yellow;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #slider_line {
+    display: none;
+  }
+  #slider {
+    display: none;
+  }
+}
