@@ -66,7 +66,7 @@ button:active {
   .container::after {
     content: 'Sorry, the slider runs only on desktop';
     text-align: center;
-    font-size: 72px;
+    font-size: 60px;
     color: yellow;
     z-index: 10;
     display: flex;
@@ -87,19 +87,20 @@ button:active {
     background-image: none;
     margin: 0;
     height: 100vh;
-    padding-top: 100px;
+    padding-top: 70px;
     border-radius: 0;
   }
   .container::after {
     content: 'Sorry, the slider runs only on desktop';
     text-align: center;
-    font-size: 72px;
+    font-size: 65px;
     color: yellow;
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Anton', sans-serif;
+    line-height: 71px;
   }
   #slider_line {
     display: none;
