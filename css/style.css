@@ -72,6 +72,7 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Anton', sans-serif;
   }
   #slider_line {
     display: none;
@@ -98,6 +99,7 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Anton', sans-serif;
   }
   #slider_line {
     display: none;
