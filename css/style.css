@@ -2,6 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:focus,
+a:visited,
+a:active {
+  outline: none;
 }
 
 .container {
@@ -55,33 +68,20 @@ button:active {
   margin-left: 10px;
 }
 
-@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
-  .container {
-    background-color: black;
-    background-image: none;
-    margin: 0;
-    height: 100vh;
-    border-radius: 0;
+@media (orientation: landscape) and (any-pointer: coarse) {
+  button {
+    position: fixed;
+    top: 50px;
+    left: 0;
   }
-  .container::after {
-    content: 'Sorry, the slider runs only on desktop';
-    text-align: center;
-    font-size: 60px;
-    color: yellow;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Anton', sans-serif;
+  #slider_prev {
+    left: 5px;
   }
-  #slider_line {
-    display: none;
-  }
-  #slider {
-    display: none;
+  #slider_next {
+    left: 60px;
   }
 }
-@media (orientation: portrait) and (hover: none) and (pointer: coarse) {
+@media (orientation: portrait) and (any-pointer: coarse) {
   .container {
     background-color: black;
     background-image: none;
@@ -91,7 +91,7 @@ button:active {
     border-radius: 0;
   }
   .container::after {
-    content: 'Sorry, the slider runs only on desktop';
+    content: 'The slider runs only landscape or on desktop';
     text-align: center;
     font-size: 65px;
     color: yellow;
@@ -106,6 +106,9 @@ button:active {
     display: none;
   }
   #slider {
+    display: none;
+  }
+  button {
     display: none;
   }
 }
